@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Pack">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net46;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Authors>Serilog Contributors</Authors>
+    <Description>Provides a System.Diagnostics.TraceListener implementation that outputs to Serilog.</Description>
+    <VersionPrefix>4.0.0</VersionPrefix>
+    <PackageId>SerilogTraceListener</PackageId>
+    <PackageTags>serilog</PackageTags>
+    <PackageIconUrl>https://serilog.net/images/serilog-community-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/serilog/serilog-diagnostics-tracelistener</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+
+    <!-- Don't include empty DLL or PDB in metapackage -->
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeSymbols>false</IncludeSymbols>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoWarn>NU5048;NU5128</NoWarn>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Serilog.Diagnostics.TraceListener" Version="1.0.0-pre" />
+  </ItemGroup>
+  
+</Project>
